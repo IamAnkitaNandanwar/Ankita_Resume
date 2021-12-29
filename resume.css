@@ -1,0 +1,202 @@
+body{
+    background-color: white;
+    color: rgb(231, 255, 224);
+    display: block;
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    display: block;
+}
+
+.left-section{
+    grid-area: 1/1/3/2;
+    grid-column: span 1;
+    background-color: #242531;
+}
+
+.right-section{
+    grid-area: 1/2/3/3;
+    grid-column: span 1 / span 2;
+    background-color: rgb(155, 223, 206);
+}
+
+.left-content{
+    padding: 1rem;
+}
+
+img{
+    margin: auto;
+    border: 5px;
+    border-radius: 30%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.02px;
+    color: blanchedalmond;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom : 0.5rem;
+    color: #94d9ea;
+    text-transform: uppercase;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    color: #f5f5f5;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+}
+
+.personal-details{
+    font-size: 1rem;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.skill-item{
+    margin-bottom: 5px;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+}
+
+.right-section{
+    padding: 2rem 3rem 2rem 3rem;
+    color: black;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.education-content li{
+    margin-bottom: 15px;
+}
+
+.education-content h4:nth-child(2){
+    color: rgb(204, 0, 255);
+    font-weight: 500;
+}
+
+.education-content h4{
+    color: rgb(0, 81, 255);
+    font-weight: 500;
+}
+
+.education-content h5{
+    color: rgb(0, 255, 234);
+    font-weight: 500;
+}
+
+.language-content .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(211, 189, 195);
+    display: block;
+    margin-top: 5px;
+}
+.language-content .percent div{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    background: rgb(18, 13, 59);
+}
+.about{
+    margin-bottom: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.exp-about.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.education-sect table, th, td {
+    border: 1px solid black;
+}
+.education-sect th,td{
+    padding: 2px 5px;
+}
+.education-sect th{
+    text-align: left;
+}
+.education-sect table{
+    margin-bottom: 10px
+}
+
+/* ul{
+    display: block;
+    list-style-type: disc;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 40px;
+} */
+@media only screen and (max-width: 674px) {
+    .main-content{
+        display: block;
+    } 
+  }
